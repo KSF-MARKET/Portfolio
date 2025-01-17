@@ -1,0 +1,134 @@
+
+@media screen and (min-width: 768px) {
+	
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+
+}
+
+h1 {
+	text-align: center;
+    color: #333;
+	text-decoration: underline;
+	font-family: "Georgia", serif;
+    font-weight: bold;
+	
+}
+
+h2 {
+	text-align: center;
+    color: #000;
+	font-size:20px;
+	line-height: 2;
+}
+
+form {
+
+	text-align: center;
+	background:lightblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+	
+	
+}
+
+label {
+	text-align: center;
+    display: block;
+    margin-bottom: 10px;
+	
+}
+
+input[type="text"], select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+	text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+	text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+
+
+h1 {
+	text-align: center;
+    color: #333;
+	text-decoration: underline;
+	font-family: "Georgia", serif;
+    font-weight: bold;
+	
+}
+
+h2 {
+	text-align: center;
+    color: #000;
+	font-size:20px;
+	line-height: 2;
+}
+
+form {
+
+	text-align: center;
+	background:lightblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+	
+	
+}
+
+label {
+	text-align: center;
+    display: block;
+    margin-bottom: 10px;
+	
+}
+
+input[type="text"], select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+	text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+	text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+}

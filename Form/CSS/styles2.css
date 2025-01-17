@@ -1,0 +1,110 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav-horizontal a {
+    text-align: left;
+    font-family: "Georgia", serif;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 0 15px; /* Adjusts the spacing between navigation buttons */
+}
+
+#nav-horizontal a:hover {
+    color: #5DADE2;
+}
+
+#nav-horizontal {
+    background-color: #9400D3;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.vertical-nav a {
+    font-family: "Georgia", serif;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 15px;
+}
+
+.vertical-nav {
+    background-color: #BA55D3;
+    padding: 10px;
+    position: absolute;
+    display: none;
+}
+
+.nav-item:hover .vertical-nav {
+    display: block;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    ul.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #9400D3;
+        width: 100%;
+    }
+
+    ul.menu.active {
+        display: flex;
+    }
+
+    .menu-icon.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu-icon.active .bar {
+        background-color: white;
+    }
+
+    .vertical-nav {
+        left: 15%;
+    }
+
+    .nav-item:hover .vertical-nav {
+        display: block;
+    }
+}
+
