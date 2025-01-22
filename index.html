@@ -30,7 +30,7 @@
             <p>Main ne apna khud ka software KSF Market k naam se creat kia hai jo business k accounts se related hai.
                 Yeh software business k sare hisab kitab ko manage karta hai aur us ki Report dekh saktay hai.</p>
             <button class="learn">Learn More</button>
-            
+
 
         </div>
 
@@ -44,25 +44,45 @@
                     <h2>Please Login</h2>
 
                     <div class="container">
-                        <form action="./Form/index2.html" method="POST">
-
-                            <br><br><label for="username">User name:</label>
+                        <form id="login-form" action="./Form/index2.html" method="POST">
+                            <br><br>
+                            <label for="username">User name:</label>
                             <span class="input-icon"></span>
-
-                            <input type="text" name="username" required><br>
-
+                            <input type="text" id="username" name="username" required>
+                            <br>
                             <label for="password">Password:</label>
                             <span class="password-icon"></span>
-                            <input type="password" name="password" required><br><br>
-
+                            <input type="password" id="password" name="password" required>
+                            <br><br>
                             <button class="login-button" type="submit">Login</button>
-
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const form = document.getElementById('login-form');
+      
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+      
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+      
+          if (username === '' || password === '') {
+            alert('Please fill in both username and password');
+            return;
+          }
+      
+          // Yeh code mein aap apne server-side logic ko add kar sakte hain
+          // Ya phir aap local storage mein data ko store kar sakte hain
+      
+          console.log('Username:', username);
+          console.log('Password:', password);
+        });
+      </script>
+      
 
 </body>
 
